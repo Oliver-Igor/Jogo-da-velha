@@ -16,6 +16,13 @@ function handleClick(event) {
     if (handleMove(position)){
         
         setTimeout(() => {
+            
+            if (playerTime == 1){
+                playerTime = `⚔`;
+            } else{
+                playerTime = `🛡`;
+            }
+
             alert('O Jogo Acabou - O vencedor foi o jogador '+ playerTime)
         }, 10);
         
